@@ -1,3 +1,3 @@
 ---
-title: Russian Realities 2025
+title: Russian Realities 2026
 ---

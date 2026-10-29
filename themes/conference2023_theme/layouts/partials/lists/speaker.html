@@ -1,6 +1,6 @@
 <div class="mb-5 d-lg-flex">
     <div class="col-3 col-xl-4 col-xxl-3 d-flex flex-wrap align-items-center">
-        <img class="rounded-circle img-person-size mb-lg-0 mb-4" alt="{{with .name}}{{.}}{{end}}" src="../{{with .image}}{{.}}{{end}}.jpg" />
+        <img class="rounded-circle img-person-size mb-lg-0 mb-4" alt="{{with .name}}{{.}}{{end}}" src="./{{ if .image }}{{ .image }}.jpg{{ else }}placeholder.svg{{ end }}" />
     </div>
     <div class="col-lg-10 col-xl-9 col-xxl-10 d-flex flex-wrap align-items-center">
         <div>
@@ -13,7 +13,7 @@
                     <span style="font-size:1.2rem;">Модератор</span>
                 </div>
             </div>
-            <h6 class="lead text-body-secondary pe-lg-4">{{with .affiliation}}{{.}}{{end}}</h6>
+            <h6 class="lead text-body-secondary pe-lg-4 me-5">{{with .affiliation}}{{.}}{{end}}</h6>
             <h5 class="display-7 fw-bold ptserif">{{with .theme}}{{.}}{{end}}</h5>
         </div>
     </div>

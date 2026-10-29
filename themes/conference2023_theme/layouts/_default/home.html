@@ -14,10 +14,10 @@
                     <div class="my-xl-5 mt-5 py-sm-5">
                         <div class="fs-3">Конференция организована проектом
                             <a class="ms-lg-2" href="https://sakharov.world/" target="_blank">
-                                <img class="stmlogo1" src="../stmlogo.svg" alt="О стране и мире"/>
+                                <img class="stmlogo1" src="./stmlogo.svg" alt="О стране и мире"/>
                             </a>
                         </div>
-                        <h1 class="display-1 fw-bold text-uppercase my-5 ptserif">Страна и&nbsp;мир: российские реалии&nbsp;2025</h1>
+                        <h1 class="display-1 fw-bold text-uppercase my-5 ptserif">Страна и&nbsp;мир: российские реалии&nbsp;2026</h1>
                         <style>
                         @media (max-width: 392px) {
                             .conference-date {
@@ -29,177 +29,194 @@
                             }
                         }
                         </style>
-                        <h2 class="display-6 fw-semibold my-5 conference-date"><mark class="text-white bg-success px-3 conference-date__badge">Берлин / 21-22 ноября</mark></h2>
+                        <h2 class="display-6 fw-semibold my-5 conference-date"><mark class="text-white bg-success px-3 conference-date__badge">Берлин / 20-21 ноября</mark></h2>
                     </div>
                 </div>
             </div>
 
         <div class="lead my-5">
-            <p>21-22 ноября 2025 года состоится Восьмая международная конференция «Страна и мир: Российские Реалии-2025». В 2018-2021 их проводил Сахаровский центр в Москве. С 2022 году конференция проходит в Берлине.</p> 
-            <p>Политологи, социологи и экономисты будут обсуждать трансформацию политического режима, его идеологии и репрессивной политики, экономику военного времени, изменения общественных настроений, а также процессы, которые происходят в международных отношениях.</p>
-            <p>Конференция пройдет в Берлине и будет транслироваться в прямом эфире на Youtube канале <a href="https://www.youtube.com/@Ostraneimire" target=”_blank” class="link-danger">«Страна и мир»</a>.</p>
+            <p>20-21 ноября 2026 года состоится Девятая международная конференция «Страна и мир: Российские реалии-2026». В 2018-2021 их проводил Сахаровский центр в Москве. С 2022 года конференция проходит в Берлине.</p>
+            <p>Политологи, социологи и экономисты будут обсуждать трансформацию политического режима, его идеологии и репрессивной политики, экономику военного времени, изменения общественных настроений и трансформацию международных отношений.</p>
+            <p>Запись всех докладов и обсуждений конференции будет опубликована на Youtube канале <a href="https://www.youtube.com/@Ostraneimire" target="_blank" class="link-danger">«Страна и мир»</a>.</p>
         </div>
 
     <div id="DayOne" class="mt-5 mb-3 pt-5">
-        <h2 class="display-3 ptserif fw-bold mb-4">День первый</h2>
-        <h4 class="display-7 mb-4">Сбор гостей 9.30-10.00 CET</h4>
+        <h2 class="display-3 ptserif fw-bold mb-4">День первый, 20 ноября</h2>
+        {{partial "lists/interval.html" (dict "time" "9.30 CET" "label" "Регистрация гостей" "type" "milestone") }}
+        {{partial "lists/interval.html" (dict "time" "9.50 CET" "label" "Открытие конференции" "type" "milestone") }}
     </div>
-    
+
     <div id="Session1" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 1 "ssname" "Эволюция российского политического режима" "sstime" "10.00-11.30 CET / 12.00-13.30 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 1 "ssname" "Тема будет объявлена" "sstime" "10.00-10.40 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Кирилл Рогов" "image" "rogov" "affiliation" "Политолог, директор проекта Re:Russia" "theme" "Враги героев СВО: неслышная дискуссия о будущем в российском обществе") }}
-                
-        {{partial "lists/speaker.html" (dict "name" "Екатерина Шульман" "image" "schulmann" "affiliation" "Политолог, nonresident scholar в Carnegie Russia Eurasia Center Berlin" "theme" "Эрозия рутины: пределы адаптивности и административная дисфункция на четвертом году войны") }}
+        {{partial "lists/speaker.html" (dict "name" "Кирилл Рогов" "image" "rogov" "affiliation" "Политолог, директор проекта Re:Russia" "theme" "") }}
 
-        {{partial "youtube.html" (dict "video" "t5YlIT7cASw") }}
-
-    </div>
-
-    <div class="py-lg-5 py-4 mt-4">
-        <div class="d-flex flex-wrap align-items-center"><h3 class="display-5 fw-bold mb-4 ptserif">Кофе-брейк</h3></div>
-        <h4 class="display-7 mb-4">11.30-12.00 CET</h4>
     </div>
 
     <div id="Session2" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 2 "ssname" "Российская угроза и ответ Европы" "sstime" "12.00-13.30 CET / 14.00-15.30 МСК" "ssdesc" "" "badgeparam" "d-none" "dsg" "d-block") }}
+        {{partial "lists/session.html" (dict "ssnumber" 2 "ssname" "Тема будет объявлена" "sstime" "10.50-11.30 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Александр Баунов" "image" "baunov" "affiliation" "Senior fellow, editor-in-chief at the Carnegie Russia Eurasia Center" "theme" "" "badgeparamsp" "d-block" "dsg" "d-block") }}
-
-        {{partial "lists/speaker.html" (dict "name" "Роланд Фройденштайн" "image" "freudenstein" "affiliation" "Основатель Brussels Freedom Hub, старший научный сотрудник GLOBSEC" "theme" "Переворачивая стол: от устойчивости и сдерживания к поддержке свободы в России и других странах") }}
-
-        {{partial "lists/speaker.html" (dict "name" "Максим Курников" "image" "kurnikov" "affiliation" "Ведущий редактор Bild, руководитель медиа «Эхо»" "theme" "" "additional" "d-block") }}
-
-        {{partial "youtube.html" (dict "video" "3ZeEh4IRwoE") }}
+        {{partial "lists/speaker.html" (dict "name" "Екатерина Шульман" "image" "schulmann" "affiliation" "Политолог, приглашенный исследователь Carnegie Russia Eurasia Center Berlin" "theme" "") }}
 
     </div>
 
-    <div class="py-lg-5 py-4 mt-4">
-        <div class="d-flex flex-wrap align-items-center"><h3 class="display-5 fw-bold mb-4 ptserif">Обед</h3></div>
-        <h4 class="display-7 mb-4">13.30-14.30 CET</h4>
-    </div>
-    
+    {{partial "lists/interval.html" (dict "time" "11.30-12.00 CET" "label" "Кофе-брейк") }}
+
     <div id="Session3" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 3 "ssname" "Война forever: почему провалилась мирная инициатива Трампа и собирается ли Путин воевать вечно" "sstime" "14.30-16.45 CET / 16.30-18.45 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 3 "ssname" "Воспитание чувств: как государство строит СВО-идентичность" "sstime" "12.00-12.40 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Александр Морозов" "image" "morozov" "affiliation" "Политолог" "theme" "Три сценария окончания войны. Последствия для России") }}
-
-        {{partial "lists/speaker.html" (dict "name" "Андреас Умланд" "image" "umland" "affiliation" "Аналитик Stockholm Centre for Eastern European Studies (SCEEUS) в Swedish Institute of International Affairs, Associate Professor of Political Science в National University of Kyiv-Mohyla Academy" "theme" "Проблемы с гарантиями безопасности для Украины" "badgeparamsp" "d-block") }}
-
-        {{partial "lists/speaker.html" (dict "name" "Василий Жарков" "image" "zharkov" "affiliation" "Политический аналитик, доцент Европейского гуманитарного университета в Вильнюсе" "theme" "Трамп, Путин и структура американо-российских отношений в 2025 году") }}
-
-        {{partial "lists/speaker.html" (dict "name" "Кирилл Мартынов" "image" "martynov" "affiliation" "Редактор «Новая газета Европа»" "theme" "") }}
-
-        {{partial "lists/speaker.html" (dict "name" "Максим Курников" "image" "kurnikov" "affiliation" "Ведущий редактор Bild, руководитель медиа «Эхо»" "theme" "" "additional" "d-block") }}
-
-        {{partial "youtube.html" (dict "video" "yjISfgTlLNU") }}
+        {{partial "lists/speaker.html" (dict "name" "Андрей Колесников" "image" "kolesnikov" "affiliation" "Обозреватель «Новой газеты» и The New Times" "theme" "") }}
 
     </div>
 
-    <div class="py-lg-5 py-4 mt-4">
-        <div class="d-flex flex-wrap align-items-center"><h3 class="display-5 fw-bold mb-4 ptserif">Кофе-брейк</h3></div>
-        <h4 class="display-7 mb-4">16.45-17.30 CET</h4>
-    </div>
-    
     <div id="Session4" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 4 "ssname" "Неототалитарные тенденции и идеологизация общества" "sstime" "17.30-19.45 CET / 19.30-21.45 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 4 "ssname" "Настроения россиян на исходе пятого года войны" "sstime" "12.50-13.30 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Ксения Лученко" "image" "lushenko" "affiliation" "Журналист, исследователь русского православия, его влияния на российскую политику и общество, автор книги «Благими намерениями. Русская православная церковь и власть от Горбачева до Путина» " "theme" "Эволюция РПЦ во время войны: откуда взялся альянс церкви и националистов") }}
+        {{partial "lists/speaker.html" (dict "name" "Алексей Левинсон" "image" "levinson" "affiliation" "Руководитель отдела социо-культурных исследований «Левада-центра»" "theme" "") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Дина Хапаева" "image" "hapaeva" "affiliation" "Историк, социолог, преподаватель Технологического университета Джорджии (Атланта), автор книги «Террор и память»" "theme" "Российский политический неомедиевализм: нормализация террора как метода правления" "badgeparamsp" "d-block") }}
-
-        {{partial "lists/speaker.html" (dict "name" "Сергей Давидис" "image" "davidis" "affiliation" "Руководитель независимого правозащитного проекта «Поддержка политзаключенных. Мемориал»" "theme" "Политические репрессии в 2025 году: в лидерах — госизмена и террористические статьи") }}
-
-        {{partial "youtube.html" (dict "video" "Pk3RvkSEXgo") }}
-                
     </div>
 
-    <div id="DayTwo" class="mt-5 pt-5 mb-3">
-        <h2 class="display-3 ptserif fw-bold">День второй</h2>
-    </div>
+    {{partial "lists/interval.html" (dict "time" "13.30-14.30 CET" "label" "Обед") }}
 
     <div id="Session5" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 5 "ssname" "Сопротивление и покорность: как российское общество адаптируется к войне и диктатуре" "sstime" "10.00-11.30 CET / 12.00-13.30 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 5 "ssname" "Дискуссия. Готова ли Европа к российской агрессии?" "sstime" "14.30-16.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Всеволод Бедерсон" "image" "bederson" "affiliation" "Политолог, исследователь проекта «Хроники»" "theme" "Мультивселенные «СВО»: направления принятия и отрицания войны в российском обществе") }}
+        {{partial "lists/speaker.html" (dict "name" "Элизабет Элина Визгунова-Викмане" "image" "vikmane" "affiliation" "Старший исследователь Латвийского института международных отношений (LIIA)" "theme" "") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Андрей Колесников" "image" "kolesnikov" "affiliation" "Обозреватель «Новой газеты» и The New Times" "theme" "Разум и чувства в заложниках: механизмы спасения от реальности" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker.html" (dict "name" "Александр Габуев" "image" "gabuev" "affiliation" "Директор берлинского центра Карнеги по изучению России и Евразии" "theme" "") }}
 
-        {{partial "youtube.html" (dict "video" "JtQZ6bqLIWY") }}
+        {{partial "lists/speaker.html" (dict "name" "Александра Кожëл" "image" "koziol" "affiliation" "Аналитик по вопросам европейской безопасности в Польском институте международных отношений (PISM)" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Д-р Герлинде Фрейа Нихус" "image" "niehus" "affiliation" "Сооснователь Brussels Freedom Hub, более 20 лет работала в структурах НАТО" "theme" "") }}
 
     </div>
 
-    <div class="py-lg-5 py-4 mt-4">
-        <div class="d-flex flex-wrap align-items-center"><h3 class="display-5 fw-bold mb-4 ptserif">Кофе-брейк</h3></div>
-        <h4 class="display-7 mb-4">11.30-12.00 CET</h4>
-    </div>
+    {{partial "lists/interval.html" (dict "time" "16.00-16.30 CET" "label" "Кофе-брейк") }}
 
     <div id="Session6" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 6 "ssname" "Идентичность и международные отношения во время войны" "sstime" "12.00-13.30 CET / 14.00-15.30 МСК" "ssdesc" "" "badgeparam" "d-none" "dsg" "d-block") }}
+        {{partial "lists/session.html" (dict "ssnumber" 6 "ssname" "Дискуссия. Предел упругости. Что думают и чувствуют россияне накануне 5-летия войны?" "sstime" "16.30-18.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Лев Гудков" "image" "gudkov" "affiliation" "Научный руководитель Левада-центра" "theme" "Друзья и враги России: коллективная идентичность в состоянии СВО" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker.html" (dict "name" "Елена Панфилова" "image" "panfilova" "affiliation" "Руководитель аналитического проекта «Лаборатория будущего» в «Новой газете»" "theme" "") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Андреас Хейнеманн-Грюдер" "image" "gruder" "affiliation" "Профессор политологии университета Бонна, научный сотрудник Global Public Policy Institute" "theme" "Фундаменталистский исторический нарратив и российская политика" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker.html" (dict "name" "Андрей Перцев" "image" "pertsev" "affiliation" "Журналист, колумнист Riddle" "theme" "") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Инна Березкина" "image" "berezkina" "affiliation" "Руководитель программ Школы гражданского просвещения, редактор Sapere Online, стипендиат программы World in Pieces IWM" "theme" "" "additional" "d-block") }}
+        {{partial "lists/speaker.html" (dict "name" "Александра Прокопенко" "image" "prokopenko" "affiliation" "Старший научный сотрудник Берлинского центра Карнеги по изучению России и Евразии" "theme" "") }}
 
-        {{partial "youtube.html" (dict "video" "ZzqXZVeM-ZM") }}
+        {{partial "lists/speaker.html" (dict "name" "Иван Филиппов" "image" "filippov" "affiliation" "Журналист, писатель, исследователь пропаганды" "theme" "") }}
 
     </div>
 
-    <div class="py-lg-5 py-4 mt-4">
-        <div class="d-flex flex-wrap align-items-center"><h3 class="display-5 fw-bold mb-4 ptserif">Обед</h3></div>
-        <h4 class="display-7 mb-4">13.30-14.30 CET</h4>
-    </div>
-    
+    {{partial "lists/interval.html" (dict "time" "18.00-18.30 CET" "label" "Кофе-брейк") }}
+
     <div id="Session7" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 7 "ssname" "Экономика не выдерживает войну?" "sstime" "14.30-16.00 CET / 16.30-18.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 7 "ssname" "Дискуссия. От «цветущей сложности» к структурам и институтам: что происходит с антивоенной эмиграцией?" "sstime" "18.30-20.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Александра Прокопенко" "image" "prokopenko" "affiliation" "Сотрудник Carnegie Russia Eurasia Center" "theme" "Российская экономика: конвенциональных инструментов балансировки не осталось. Что дальше?") }}
+        {{partial "lists/speaker.html" (dict "name" "Маргарита Завадская" "image" "zavadskaya" "affiliation" "Старший научный сотрудник Финского института международных отношений (FIIA)" "theme" "") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Андрей Яковлев" "image" "yakovlev" "affiliation" "Ассоциированный исследователь Центра Дэвиса в Гарварде и Свободного университета Берлина" "theme" "«Война на истощение», экономическая стагнация и мобилизационная трансформация российских элит") }}
+        {{partial "lists/speaker.html" (dict "name" "Борис Зимин" "image" "zimin" "affiliation" "Общественный деятель, предприниматель, меценат" "theme" "") }}
 
-        {{partial "youtube.html" (dict "video" "fumHVx2GJc4") }}
+        {{partial "lists/speaker.html" (dict "name" "Александр Морозов" "image" "morozov" "affiliation" "Журналист, политолог" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Сергей Пархоменко" "image" "parkhomenko" "affiliation" "Журналист, политический обозреватель, сооснователь проектов «Редколлегия», «Последний адрес», «Диссернет»" "theme" "") }}
+
     </div>
 
-    <div class="py-lg-5 py-4 mt-4">
-        <div class="d-flex flex-wrap align-items-center"><h3 class="display-5 fw-bold mb-4 ptserif">Кофе-брейк</h3></div>
-        <h4 class="display-7 mb-4">16.00-16.30 CET</h4>
+    <div id="DayTwo" class="mt-5 pt-5 mb-3">
+        <h2 class="display-3 ptserif fw-bold">День второй, 21 ноября</h2>
     </div>
-    
+
     <div id="Session8" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 8 "ssname" "Элитные репрессии, передел собственности и сфер влияния" "sstime" "16.30-18.00 CET / 18.30-20.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 8 "ssname" "Трансформация политического режима после 2024: роль силовиков" "sstime" "10.00-10.40 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Николай Петров" "image" "petrov" "affiliation" "Политолог" "theme" "Российская политическая система в зеркале репрессий: чем путинские репрессии отличаются от сталинских?" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker.html" (dict "name" "Николай Петров" "image" "petrov" "affiliation" "Старший научный сотрудник, руководитель отдела анализа процессов трансформации NEST Centre" "theme" "") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Оксана Антоненко" "image" "antonenko" "affiliation" "Профессор Европейского университетского института во Флоренции, научный сотрудник института Кеннана в Вашингтоне" "theme" "Политическая экономия войны: выигравшие и проигравшие от демодернизации России") }}
-
-        {{partial "youtube.html" (dict "video" "uaweHztrTVo") }}
     </div>
 
     <div id="Session9" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 9 "ssname" "Краткие выступления участников дискуссии и закрытие конференции" "sstime" "18.30-20.00 CET / 20.30-22.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 9 "ssname" "Непреодолимая устойчивость путинской экономики: причины и следствия" "sstime" "10.50-11.30 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Инна Березкина" "image" "berezkina" "affiliation" "Руководитель программ Школы гражданского просвещения, редактор Sapere Online, стипендиат программы World in Pieces IWM" "theme" "") }}
+        {{partial "lists/speaker.html" (dict "name" "Владислав Иноземцев" "image" "inozemtsev" "affiliation" "Экономист, соучредитель центра CASE, автор книги «Смертономика: монетизация жизни в путинской России»" "theme" "") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Андрей Перцев" "image" "pertsev" "affiliation" "Журналист, специальный корреспондент «Медузы», автор Riddle" "theme" "") }}
-        
-        {{partial "lists/speaker.html" (dict "name" "Дмитрий Стратиевский" "image" "stratievsky" "affiliation" "Политолог, историк, директор Центра изучения Восточной Европы (Osteuropa-Zentrum Berlin e.V.)" "theme" "") }}
+    </div>
 
-        {{partial "lists/speaker.html" (dict "name" "Кирилл Шамиев" "image" "shamiev" "affiliation" "Научный сотрудник European Council on Foreign Relations" "theme" "") }}
+    {{partial "lists/interval.html" (dict "time" "11.30-12.00 CET" "label" "Кофе-брейк") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Сергей Шелин" "image" "shelin" "affiliation" "Политический аналитик, автор книги «Занимательная Россия»" "theme" "") }}
+    <div id="Session10" class="py-lg-5 py-4 mt-4">
 
-        {{partial "youtube.html" (dict "video" "pENQ903rL1o") }}
+        {{partial "lists/session.html" (dict "ssnumber" 10 "ssname" "Дискуссия. Как меняется машина репрессий: масштаб, инструменты, целеполагание" "sstime" "12.00-13.30 CET" "ssdesc" "" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Сергей Давидис" "image" "davidis" "affiliation" "Руководитель независимого правозащитного проекта «Поддержка политзаключенных. Мемориал»" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Дмитрий Заир-Бек" "image" "zair-bek" "affiliation" "Правозащитник, руководитель «Первого отдела»" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Михаил Савва" "image" "savva" "affiliation" "Эксперт украинской правозащитной организации «Центр гражданских свобод»" "theme" "") }}
+
+    </div>
+
+    {{partial "lists/interval.html" (dict "time" "13.30-14.30 CET" "label" "Обед") }}
+
+    <div id="Session11" class="py-lg-5 py-4 mt-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 11 "ssname" "Дискуссия. Глобальный мировой беспорядок: США, Европа, Ближний Восток и Россия" "sstime" "14.30-16.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Антон Барбашин" "image" "barbashin" "affiliation" "Редакционный директор Riddle, политический аналитик" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Ральф Фюкс" "image" "fuks" "affiliation" "Управляющий директор LibMod (Center for Liberal Modernity)" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Майкл К. Киммадж" "image" "kimmage" "affiliation" "Управляющий директор Kennan Institute, профессор Catholic University of America" "theme" "") }}
+
+    </div>
+
+    {{partial "lists/interval.html" (dict "time" "16.00-16.30 CET" "label" "Кофе-брейк") }}
+
+    <div id="Session12" class="py-lg-5 py-4 mt-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 12 "ssname" "Стратегия России и европейская безопасность в 2026 году" "sstime" "16.30-17.10 CET" "ssdesc" "" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Кирилл Шамиев" "image" "shamiev" "affiliation" "Сотрудник Шведского института международных отношений (UI) и Института международных отношений и политологии (TSPMI) Вильнюсского университета" "theme" "") }}
+
+    </div>
+
+    <div id="Session13" class="py-lg-5 py-4 mt-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 13 "ssname" "«Цензура запрещается»: как театр, кино и литература живут под цензурой, которой нет" "sstime" "17.20-18.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Михаил Калужский" "image" "kaluzhsky" "affiliation" "Исследователь театра, соавтор книги «Performance Censorship» о театральной цензуре в России" "theme" "") }}
+
+    </div>
+
+    {{partial "lists/interval.html" (dict "time" "18.00-18.30 CET" "label" "Кофе-брейк") }}
+
+    <div id="Session14" class="py-lg-5 py-4 mt-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 14 "ssname" "Подведение итогов" "sstime" "18.30-20.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Ирина Бусыгина" "image" "busygina" "affiliation" "Научный сотрудник Центра Дэвиса по изучению России и Евразии (Гарвардский университет)" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Василий Жарков" "image" "zharkov" "affiliation" "Доцент Европейского гуманитарного университета (Вильнюс)" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Маргарита Завадская" "image" "zavadskaya" "affiliation" "Старший научный сотрудник Финского института международных отношений (FIIA)" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Кирилл Мартынов" "image" "martynov" "affiliation" "Главный редактор, сооснователь «Новой газеты Европа», сооснователь Свободного университета" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Александр Морозов" "image" "morozov" "affiliation" "Политолог, журналист" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Андрей Перцев" "image" "pertsev" "affiliation" "Журналист, колумнист Riddle" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Иван Преображенский" "image" "preobrazhensky" "affiliation" "Журналист, колумнист DW" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Кирилл Харатьян" "image" "kharatyan" "affiliation" "Редактор «Мнений» The Moscow Times" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Андрей Яковлев" "image" "yakovlev" "affiliation" "Экономист, приглашенный исследователь в Свободном университете Берлина" "theme" "") }}
 
     </div>
 
@@ -214,7 +231,9 @@
 
         <h2 id="Registration" class="display-4 display-5 fw-bold text-center mb-5 ptserif">Регистрация</h2>
 
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9Fr0SFTeRWtC6DyZFdnYqeX2KHHTjP8LH7jGMIoCxQTpSog/viewform?embedded=true" width="640" height="1259" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+        <div class="registration-frame-wrap">
+            <iframe class="registration-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSejFivVblYwlV5tpQL1_JxzJ7JfbBsXpyC4WuBGlNYwVrwoCg/viewform?embedded=true">Загрузка…</iframe>
+        </div>
 
     </div>
 </div>

@@ -44,14 +44,14 @@
 	font-family:'pt serif';
 	font-style:normal;
 	font-weight:700;
-	src:local('PT Serif'), url('../fonts/PT_Serif-Web-Bold.woff') format('woff');
+	src:url('../fonts/PT_Serif-Web-Bold.woff') format('woff');
 }
 
 @font-face {
 	font-family:'pt serif';
 	font-style:italic;
 	font-weight:700;
-	src:local('PT Serif'),url('../fonts/PT_Serif-Web-BoldItalic.woff') format('woff');
+	src:url('../fonts/PT_Serif-Web-BoldItalic.woff') format('woff');
 }
 
 html {
@@ -177,7 +177,7 @@ input[type="text"]:focus {
 	  top:10rem;
 	  right:0;
 	  z-index:2;
-	  height:calc(100vh - 7rem);
+	  max-height:calc(100vh - 11rem);
 	  overflow-y:auto
 	}
   }
@@ -281,4 +281,70 @@ input[type="text"]:focus {
     color: white !important;
     border-radius: 0;
     border: 0;
+}
+
+/*Schedule intervals: breaks, registration, opening*/
+
+.interval {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: .25rem 2rem;
+	margin: 2.5rem 0 6rem;
+	padding: 1.25rem 0;
+	border-top: 1px solid rgba(0, 0, 0, .35);
+	border-bottom: 1px solid rgba(0, 0, 0, .35);
+	color: $body-color;
+	font-family: 'pt serif', serif;
+}
+
+.interval__time {
+	min-width: 11rem;
+	font-size: 1.5rem;
+	font-variant-numeric: tabular-nums;
+}
+
+.interval__label {
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+}
+
+.interval--milestone {
+	margin: 1.5rem 0;
+	padding: .25rem 0 .25rem 1.25rem;
+	border-top: 0;
+	border-bottom: 0;
+	border-left: .3rem solid $success;
+	font-family: inherit;
+}
+
+.interval--milestone .interval__time,
+.interval--milestone .interval__label {
+	font-size: 1.25rem;
+}
+
+.interval--milestone .interval__time {
+	font-weight: 600;
+}
+
+
+/*Embedded Google Form: the form is cross-origin, so its height cannot be read.
+  The text reflows with width, so the iframe height is derived from the iframe width
+  (container query units) to fit the whole form without an inner scroll.*/
+
+.registration-frame-wrap {
+	container-type: inline-size;
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.registration-frame {
+	display: block;
+	width: 100%;
+	height: 2500px;
+	height: unquote("max(calc(4797px - 573cqw), calc(3416px - 240cqw))");
+	border: 0;
 }
